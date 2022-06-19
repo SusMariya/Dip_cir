@@ -1,0 +1,17 @@
+{% extends 'contact/base.html' %}
+{% block content %}
+<h1>Новости</h1>
+<h2 class = 'count'>Новостей: {{  news.count }}</h2>
+{% for new in news %}
+<div class="element">
+    <h2 class="top">{{ new.title }}</h2>
+    <div><img src="{{ new.image.url }}" alt=""></div>
+    <div class="new_text">
+        <h5>{{ new.date_new }}</h5>
+        <p>{{ new.description|safe }}</p>
+
+    </div>
+</div>
+{% endfor %}
+
+{% endblock %}

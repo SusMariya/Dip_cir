@@ -1,0 +1,21 @@
+{% load bootstrap5 %}
+{% bootstrap_css %}
+{% bootstrap_javascript jquery='full' %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+ <div class="contact">
+     <div class="wrap">
+         {% block content %}
+         {% endblock %}
+     </div>
+ </div>
+{% block js %}
+</body>
+</html>

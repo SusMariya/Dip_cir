@@ -1,0 +1,27 @@
+{% extends 'contact/base.html' %}
+{% block content %}
+
+{% load static %}
+<h1>Центр инновационного развития</h1>
+
+<div class="block">
+    {% for contact in contacts %}
+    <div class="cont">
+        <div><h2>{{ contact.title }}</h2>
+        <p>{{ contact.content }}</p>
+        <p>{{ contact.c_adres }}</p>
+            <div class="mail">
+                <a href="innovcentre.rzd@mail.ru">{{ contact.c_mail }}</a>
+            </div>
+            <div class="url">
+                <a href="https://innovation.rzd.ru/" target="_blank">{{ contact.url }}</a>
+            </div>
+        </div>
+        <a href="http://qrcoder.ru" target="_blank"><img src="http://qrcoder.ru/code/?https%3A%2F%2Finnovation.rzd.ru%2F&4&0" width="132" height="132" border="0" title="QR код"></a>
+    </div>
+     {% endfor %}
+</div>
+<div class="map">
+    <a class="dg-widget-link" href="http://2gis.ru/moscow/firm/70000001045473552/center/37.65083312988282,55.772469595530424/zoom/15?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=bigMap">Посмотреть на карте Москвы</a><div class="dg-widget-link"><a href="http://2gis.ru/moscow/center/37.651385,55.771712/zoom/15/routeTab/rsType/bus/to/37.651385,55.771712╎РЖД, центр инновационного развития?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=route">Найти проезд до РЖД, центр инновационного развития</a></div><script charset="utf-8" src="https://widgets.2gis.com/js/DGWidgetLoader.js"></script><script charset="utf-8">new DGWidgetLoader({"width":640,"height":600,"borderColor":"#a3a3a3","pos":{"lat":55.772469595530424,"lon":37.65083312988282,"zoom":15},"opt":{"city":"moscow"},"org":[{"id":"70000001045473552"}]});</script><noscript style="color:#c00;font-size:16px;font-weight:bold;">Виджет карты использует JavaScript. Включите его в настройках вашего браузера.</noscript>
+</div>
+{% endblock %}
