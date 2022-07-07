@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500&display=swap');
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background: #e2e2e2;
+    /* text-indent: 20px; */
+    margin: 0;
+    padding: 0;
+
+}
+/* content{
+    
+} */
+header{
+    background: url(../contact/shapka12.png) no-repeat bottom;
+    background-color: #e2e2e2;
+    background-size:  100%;
+    /* height: auto; */
+    margin-top: 0;
+}
+header img{
+    float: left;
+    margin: 10px 20px 0 20px;
+    /* box-shadow: 0 0 10px #666; */
+    display: inline;
+    /* box-sizing: border-box; */
+    /* box-sizing: 100%; */
+    
+}
+header h1{
+
+    margin: 20px 0 10px 20px;
+    font-size: 250%;
+    color: rgb(103, 10, 80);
+    text-shadow: 1px 1px 5px rgb(50, 44, 220);
+}
+.menu{
+    background: rgb(218, 218, 208);
+    padding: 10px;
+    border-radius: 10px;
+    width: 450px;
+    position: fixed;
+    box-shadow: 0 0 10px #666;
+ }
+ marquee{
+    opacity: 0.3;
+    /* background: rgb(236, 226, 187);  */
+    font-size: 120%;
+    
+    
+ }
+ /* marquee b{
+    opacity: 2;
+    color: black;
+    font: bold;
+ } */
+.menu a{
+    color: #a44cf1;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 150%;
+} 
+.menu ul{
+    list-style: none;
+    display: block;
+    font-size: 20px;
+}
+.menu li{
+    margin-bottom: 20px; 
+} 
+.menu li a:hover {
+    color: #ffe; 
+    background-color: #5488af; 
+}
+.contact h1{
+    color: rgb(81, 54, 230);
+}
+/* .element .new_text{
+    font-size: 150%;
+} */
+.element .top{
+    font-size: 130%;
+}
+.element{
+    font-size: 150%;
+    text-align: justify;
+    width: 1670px;
+    margin: 20px;
+  
+}
+.element img{
+    float: left;
+    margin: 10px 20px 10px 0;
+    box-shadow: 0 0 10px #666;
+    /* box-sizing: border-box; */
+    /* box-sizing: 100%; */
+    
+}
+.element .border{
+    background-color: rgb(195, 208, 220);
+    /* border: 3px #5c96d4 solid; */
+    padding: 20px;
+    margin: 20px;
+    height: 450px;
+    width: 1500px;
+    box-shadow: 0 0 10px #666;
+    border-radius: 10px;
+}
+.element ul{
+    list-style-image: url(../contact/Button_Ok.png);
+     
+}
+.element .mail{
+    padding: 10px;
+}
+.element .url{
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.element a{
+    text-decoration: none;
+
+    color: #1d07ea;
+}
+p a{
+    margin: 0;
+    padding: 0;
+}
+.map {
+    justify-content: right;
+    display: flex;
+    margin: 0 50px 0 0;
+
+}
+/* .cont p{
+    font-size: 150%;
+} */
+/* .contact .element{
+    border: 4px solid #666;
+    padding-left: 500px;
+    width: 1500px;
+} */
+
+.contact{
+    /* border: 4px solid #666; */
+    padding-left: 500px;
+    text-indent: 20px;
+    /* width: 1500px; */
+}
+/* .new_text{
+    font-size: 150%;
+}
+.new_text h2{
+    /* font-size: 150%; */
+    /* color: rgb(42, 73, 14);
+} */
+.step-links{
+    font-style:italic;
+    padding: 50px;
+    margin: 10px;
+    text-decoration: none;
+   
+}
+.step-links a:hover{
+    color: red;
+    background-color: rgb(245, 213, 213);
+    margin: 10px;
+    text-decoration: none;
+   
+}
+.current{
+    font-size: 110%;
+    color: #1d07ea;
+    font-style: italic;
+    
+}

@@ -5,5 +5,5 @@ app_name = 'doc'
 
 urlpatterns = [
     path('', views.docs, name='docs'),
-    path('<int:doc_id>', views.r_doc, name='r_doc')
+    path('doc/<int:doc_id>', views.r_doc, name='r_doc')
 ]

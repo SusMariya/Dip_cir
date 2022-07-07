@@ -4,3 +4,8 @@ from .models import Doc
 # Register your models here.
 admin.site.register(Doc)
 
+
+#
+# class DocsFilesIn(admin.TabularInline):
+#     model = Doc
+

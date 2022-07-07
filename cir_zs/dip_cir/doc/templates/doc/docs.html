@@ -4,7 +4,7 @@
 <h2 class = 'count'>Всего документов: {{  docs.count }}</h2>
 {% for doc in docs %}
 <div class="element">
-    <h2 class="top"><a href="#" download="{{ doc }}.pdf" title="{{ doc.title }}">{{ doc.title }} </a></h2>
+    <p class="top"><i><a href="{{ doc.r_doc.url }}" target="_blank">{{ doc.title }} </a></i></p>
 </div>
 {% endfor %}
 

@@ -18,11 +18,15 @@ from django.urls import path, include
 from django.conf.urls.static import static
 from django.conf import settings
 from contact import views
-
+# from .views import *
+#
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.index, name='index'),
     path('doc', include('doc.urls')),
     path('new', include('new.urls')),
+    path('order_work', views.order_work, name="order_work"),
+
 ]
-urlpatterns += static(settings.MEDIA_URL, documenr_root=settings.MEDIA_URL)
+if settings.DEBUG:
+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
